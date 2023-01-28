@@ -6,7 +6,7 @@
 //    5 -> Пятница
 
 
-Console.WriteLine("Номер дня недели");
+Console.WriteLine("Введите номер дня недели");
 int numberOfDay = Convert.ToInt32(Console.ReadLine());
 switch (numberOfDay)
 {
