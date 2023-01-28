@@ -6,7 +6,6 @@
 // 782 -> 2
 // 918 -> 8
 
-
 Console.WriteLine("Введите трёхзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 int lastDigit = number % 10;    
