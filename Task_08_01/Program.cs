@@ -8,30 +8,30 @@ Console.WriteLine("Введите целое число больше нуля:")
 while (isFinished == 0)
 {
     int N = Convert.ToInt32(Console.ReadLine());
-    if (N > 0)
+    if (N == 1){
+        Console.WriteLine ("Хоть единица и натуральное число, но чётных чисел от нуля до него нет. Введите другое число");
+       isFinished = 0; 
+    }
+    else if (N > 1)
     {
         int startNum = 1;
-
         while (startNum <= N)
         {
             if (startNum % 2 == 0)
             {
                 Console.Write(startNum);
-                if (startNum < N-1)
+                if (startNum < N - 1)
                 {
                     Console.Write(", ");
                     isFinished = 1;
-
                 }
             }
-
             startNum++;
-
         }
     }
     else
     {
-        Console.WriteLine("Внимательнее читай задание... и снова вводи число");
+        Console.WriteLine("Внимательнее читай задание... и если введено 1, соответственно, тогда снова вводи число");
         isFinished = 0;
     }
 }
