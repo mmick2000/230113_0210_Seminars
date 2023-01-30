@@ -6,10 +6,10 @@
 // 12-> 2
 // 85-> 8
 
-int NumRandom(int a, int b) // метод генерации числа и его выведения в консоль
+int NumRandomGeneration(int a, int b) // метод генерации числа и его выведения в консоль
 {
     int number = new Random().Next(a, b);
-    Console.WriteLine($"Случайное число из отрека 1-99 => {number}.");
+    Console.WriteLine($"Берём двузначное число => {number}.");
     return number;
 }
 // int firstDigit = number / 10;
@@ -23,13 +23,13 @@ int NumRandom(int a, int b) // метод генерации числа и ег�
 //     Console.WriteLine($"Наибольшая цифра в нём =>  {secondDigit}.");
 // }
 // NumRandom(10, 100);
-int number = NumRandom(1, 100);
+int number = NumRandomGeneration(10, 100);
 int maxDigit = MaxDigit(number);
 Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit}.");
-number = NumRandom(1, 100);
+number = NumRandomGeneration(20, 70);
 int maxDigit1 = MaxDigit(number);
 Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit1}.");
-number = NumRandom(1, 100);
+number = NumRandomGeneration(50, 60);
 int maxDigit2 = MaxDigit(number);
 Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit2}.");
 
