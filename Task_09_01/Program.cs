@@ -7,13 +7,13 @@
 // 85-> 8
 
 
-int number = new Random().Next(10, 99);
-Console.WriteLine(number);
-int a1 = number / 10;
-int a2 = number % 10;
-if (a1 > a2)
+int number = new Random().Next(10, 100);
+Console.WriteLine($"Случайное число из отрека 1-99 => {number}.");
+int firstDigit = number / 10;
+int secondDigit = number % 10;
+if  (firstDigit > secondDigit)
 {
-    Console.WriteLine(a1);
+    Console.WriteLine($"Наибольшая цифра в нём =>  {firstDigit}.");
 }else{
-    Console.WriteLine(a2);
+    Console.WriteLine($"Наибольшая цифра в нём =>  {secondDigit}.");
 }
