@@ -25,13 +25,20 @@ int NumRandomGeneration(int a, int b) // метод генерации числ�
 // NumRandom(10, 100);
 int number = NumRandomGeneration(10, 100);
 int maxDigit = MaxDigit(number);
-Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit}.");
+PrintMaxDigit (number);
+// Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit}.");
 number = NumRandomGeneration(20, 70);
 int maxDigit1 = MaxDigit(number);
-Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit1}.");
+PrintMaxDigit (number);
+// Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit1}.");
 number = NumRandomGeneration(50, 60);
 int maxDigit2 = MaxDigit(number);
-Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit2}.");
+PrintMaxDigit (number);
+// Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit2}.");
+
+void PrintMaxDigit (int number){
+    Console.WriteLine($"Наибольшая цифра в нём =>  {maxDigit}.");
+}
 
 int MaxDigit(int number)
 {
