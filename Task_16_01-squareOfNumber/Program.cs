@@ -14,7 +14,7 @@ int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 bool MultipleNums(int num1, int num2)
 {
-if num1 % num2 == 0 || num2 % num1 == 0
+if (num1 % num2 == 0 || num2 % num1 == 0)
     {
         return true;
     }
