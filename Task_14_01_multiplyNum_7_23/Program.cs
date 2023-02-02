@@ -26,7 +26,7 @@ bool MultipleNums(int number)
 }
 // int remainderOfDivision = MultipleNums(number);
 // int remainderOfDivision = MultipleNums(firstNumber, secondNumber);
-    
+
 // if (remainderOfDivision = true)
 if (MultipleNums(number) == true)
 { Console.WriteLine("Да"); }
