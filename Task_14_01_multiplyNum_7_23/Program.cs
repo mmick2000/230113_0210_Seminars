@@ -15,21 +15,22 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 bool MultipleNums(int number)
 {
-    if (number % 7 == 0 & number % 23 == 0)
-    {
-        return true;
-    }
-    else
-    {
-        return false; }
+    return number % 7 == 0 & number % 23 == 0;
+    // if (number % 7 == 0 & number % 23 == 0)
+    // {
+    //     return true;
+    // }
+    // else
+    // {
+    //     return false; }
 }
 // int remainderOfDivision = MultipleNums(number);
 // int remainderOfDivision = MultipleNums(firstNumber, secondNumber);
-
+    
 // if (remainderOfDivision = true)
-if (MultipleNums(number))
+if (MultipleNums(number) == true)
 { Console.WriteLine("Да"); }
-else { Console.WriteLine($"Нет"); }
+else { Console.WriteLine("Нет"); }
 
 // bool DivisionNumber(int firstNumber, int secondNumber)
 // divisionNumber = DivisionNumber(firstNumber, secondNumber);
