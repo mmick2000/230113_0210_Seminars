@@ -1,27 +1,29 @@
 ﻿// Task_08_01:
 // Напишите программу, которая 
-// 1. на вход принимает число (N), 
-// 2. на выходе показывает все чётные числа от 1 до N.
+// 1. на вход принимает число (nu), 
+// 2. на выходе показывает все чётные числа от 1 до nu.
 
 
 int isFinished = 0;
 Console.WriteLine("Введите целое число больше нуля:");
 while (isFinished == 0)
 {
-    int N = Convert.ToInt32(Console.ReadLine());
-    if (N == 1){
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num == 1){
         Console.WriteLine ("Хоть единица и натуральное число, но чётных чисел от нуля до него нет. Введите другое число");
        isFinished = 0; 
     }
-    else if (N > 1)
+    else if (num > 1)
     {
         int startNum = 1;
-        while (startNum <= N)
+        while (startNum <= num
+)
         {
             if (startNum % 2 == 0)
             {
                 Console.Write(startNum);
-                if (startNum < N - 1)
+                if (startNum < num
+         - 1)
                 {
                     Console.Write(", ");
                     isFinished = 1;

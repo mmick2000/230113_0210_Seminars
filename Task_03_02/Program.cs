@@ -8,6 +8,7 @@
 
 Console.WriteLine("Введите номер дня недели");
 string numberOfDay = Console.ReadLine();
+// string numberOfDay = Convert.ToString(Console.ReadLine());
 if (numberOfDay == "1")
 {
 Console.WriteLine("Понедельник"); 
