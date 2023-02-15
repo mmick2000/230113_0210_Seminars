@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Task_19_01_palindrom_abc_cba
+// Задача 19: Напишите программу, которая 
+// 1. принимает на вход пятизначное число 
+// 2. проверяет, является ли оно палиндромом.
+// 14212 -> нет 
+// 23432 -> да 
+// 12821-> да
+
