@@ -25,4 +25,3 @@ Console.Write(number + " -> ");
         count++;
     }
 }
-
